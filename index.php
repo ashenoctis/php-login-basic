@@ -5,6 +5,7 @@
  *
  *
  * @author Ashish Sharma
+ * @mail me@ashisharma.info
  * @link http://ashisharma.info
  * @link http://asxena.foxena.com
  * @license http://opensource.org/licenses/MIT MIT License
