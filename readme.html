@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- /*
+ * A simple, clean and secure PHP Login Script using MySQL.
+ *
+ *
+ * @author Ashish Sharma
+ * @link http://ashisharma.info
+ * @link http://asxena.foxena.com
+ * @license http://opensource.org/licenses/MIT MIT License
+ */
+-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Readme</title>
+<style type="text/css">
+body {
+	font: 11px/1.4em Verdana, Arial, Helvetica, sans-serif;
+}
+h1 {
+	color: #99CC00;
+	margin: 0px 0px 5px;
+	padding: 0px 0px 3px;
+	font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+	border-bottom: 1px dashed #E6E8ED;
+}
+h2 {
+	color: #99CC00;
+	margin: 15px 0px 5px;
+	padding: 0px 0px 3px;
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	border-bottom: 1px dashed #E6E8ED;
+}
+a {
+	color: #2D3954;
+	font-size: 11px;
+}
+a:hover {
+	color: #99CC00;
+}
+</style>
+</head>
+
+<body>
+<h1>Readme</h1>
+<p>Below is a brief description of all PHP files you will find in the download archive.</p>
+<ol>
+  <li>config.php - This script contains the database connection details. Edit this file to specify your own database's connection details.</li>
+  <li>register-form.php - A simple registration form</li>
+  <li>register-exec.php - Handler script for the the above form. This script will create member accounts for you.</li>
+  <li>login-form.php - Login form</li>
+  <li>login-exec.php - Handler script for the above login form. This script authenticates the login details and then sets up a session for the user.</li>
+  <li>logout.php - Script used to logout a user from the session.</li>
+  <li>member-index.php - Sample password protected page.</li>
+  <li>member-profile.php - Sample password protected page.</li>
+  <li>auth.php - Include this script at the top of any page you want to password protect. This script checks whether the user is logged in or not.</li>
+</ol>
+<h2>Installation</h2>
+<ul>
+  <li>We need an Apache server with PHP Compiler &amp; MySQL database (WAMP or LAMP) to run php code. <strong>XAMPP</strong> is recommended for this example. Download it from <a href="https://www.apachefriends.org/index.html"><strong>here</strong></a>.</li>
+  <li>Install the package. Let's assume that you are on Windows to be specific; Then the installation files will be at "C:\XAMPP".</li>
+  <li>Start "xampp-control.exe" from the folder. Start 'Apache' &amp; 'MySQL'. It will start on ports 80 &amp; 3306 repectively.</li>
+  <li>Copy this folder as "C:\xampp\htdocs\login". Open browser and enter "http://localhost/phpmyadmin" in address bar.</li>
+  <li>Select 'test' database from sidebar. Click on 'Import' tab at top. Under section 'File to Import' click 'Choose File'. Select SQL file from "C:\xampp\htdocs\login\mysql.sql" and push 'Go' at the end of the page.</li>
+  <li>If all goes well then you can see 'Import has been successfully' message. Click on 'test > Structure' there you can now see a table named "members". In Action coloumn click 'Browse'. Now you can see the table data.</li>
+  <li>Now enter "http://localhost/login" in address bar of your browser. Try username 'ashenoctis' and password 'password'. Later you can logout and register your own account with it.</li>
+</ul>
+
+<h2>Notes</h2>
+<ul>
+  <li>Make sure that you edit the <b>config.php</b> file and change the connections details to match your own environment.</li>
+  <li>The script is meant to be a teaching tool for Asxena's PHP newbies and is not meant to be used in production environments.</li>
+</ul>
+
+<br/>
+<center><h3><a href="http://localhost/login">Login Page</a>&nbsp;&nbsp;&nbsp;<a href="register-form.php">Register</a>&nbsp;&nbsp;&nbsp;
+<a href="http://localhost">Localhost</a>&nbsp;&nbsp;&nbsp;<a href="http://localhost/phpmyadmin">Database</a></h3></center>
+</body>
+</html>
